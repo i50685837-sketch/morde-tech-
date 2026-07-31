@@ -1,0 +1,14 @@
+[
+  {
+    "type": "command",
+    "command": "kick",
+    "user": "254712345678@s.whatsapp.net",
+    "group": "120363000000000000@g.us",
+    "time": "2026-07-31T10:00:00"
+  },
+  {
+    "type": "login",
+    "message": "Bot connected",
+    "time": "2026-07-31T10:05:00"
+  }
+]
