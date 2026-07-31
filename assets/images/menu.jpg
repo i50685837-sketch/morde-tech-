@@ -1,0 +1,34 @@
+const fs = require("fs");
+
+await sock.sendMessage(
+    msg.chat,
+    {
+        image: fs.readFileSync(
+            "./assets/images/menu.jpg"
+        ),
+        caption:
+`╭━━━〔 🤖 Morde-Tech Bot 〕━━━╮
+
+👤 Owner: Morde-Tech
+⚡ Prefix: .
+
+📥 Downloader
+• .ytmp3
+• .ytmp4
+• .tiktok
+
+👥 Group
+• .kick
+• .tagall
+• .mute
+
+🛠 Owner
+• .eval
+• .exec
+
+╰━━━━━━━━━━━━━━━━━━╯`
+    },
+    {
+        quoted: msg
+    }
+);
