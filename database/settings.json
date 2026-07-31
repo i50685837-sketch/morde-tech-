@@ -1,0 +1,35 @@
+{
+  "prefix": ".",
+
+  "botName": "Morde-Tech Bot 🔥",
+
+  "ownerName": "Morde-Tech",
+
+  "mode": "public",
+
+  "privateMode": false,
+
+  "maintenance": false,
+
+  "antiLink": false,
+
+  "antiStatusMention": false,
+
+  "welcome": false,
+
+  "goodbye": false,
+
+  "autoRead": false,
+
+  "autoTyping": false,
+
+  "autoRecording": false,
+
+  "alwaysOnline": true,
+
+  "groupOnly": false,
+
+  "commandLimit": false,
+
+  "version": "1.0.0"
+}
