@@ -1,0 +1,139 @@
+const auth =
+require("./auth");
+
+const admin =
+require("./admin");
+
+const owner =
+require("./owner");
+
+const banned =
+require("./banned");
+
+const maintenance =
+require("./maintenance");
+
+const group =
+require("./group");
+
+
+
+async function run(sock, msg, options = {}) {
+
+
+    // Register user
+    await auth(
+        sock,
+        msg
+    );
+
+
+
+    // Check banned user
+    if (
+        banned(
+            sock,
+            msg
+        )
+    ) {
+
+        return {
+            allowed: false,
+            reason: "banned"
+        };
+
+    }
+
+
+
+    // Check maintenance mode
+    if (
+        maintenance(
+            sock,
+            msg
+        )
+    ) {
+
+        return {
+            allowed: false,
+            reason: "maintenance"
+        };
+
+    }
+
+
+
+    // Group only command
+    if (
+        options.group &&
+        !group(
+            sock,
+            msg
+        )
+    ) {
+
+        return {
+            allowed: false,
+            reason: "group"
+        };
+
+    }
+
+
+
+    // Admin command
+    if (
+        options.admin &&
+        !(await admin(
+            sock,
+            msg
+        ))
+    ) {
+
+        return {
+            allowed: false,
+            reason: "admin"
+        };
+
+    }
+
+
+
+    // Owner command
+    if (
+        options.owner &&
+        !owner(
+            sock,
+            msg
+        )
+    ) {
+
+        return {
+            allowed: false,
+            reason: "owner"
+        };
+
+    }
+
+
+
+    return {
+        allowed: true
+    };
+
+}
+
+
+
+module.exports = {
+
+    run,
+
+    auth,
+    admin,
+    owner,
+    banned,
+    maintenance,
+    group
+
+};
