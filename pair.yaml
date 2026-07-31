@@ -1,0 +1,37 @@
+name: Morde-Tech-Bot
+
+version: 1.0.0
+
+runtime:
+  node: "22"
+
+bot:
+  name: "Morde-Tech Bot 🔥"
+  prefix: "."
+  mode: "public"
+
+folders:
+  commands: "./commands"
+  handlers: "./handlers"
+  database: "./database"
+  lib: "./lib"
+  middleware: "./middleware"
+  plugins: "./plugins"
+  assets: "./assets"
+
+database:
+  type: "json"
+  location: "./database"
+
+auth:
+  folder: "./session"
+
+start:
+  command: "node index.js"
+
+features:
+  autoRead: true
+  autoReact: true
+  autoReply: true
+  antiDelete: true
+  downloader: true
