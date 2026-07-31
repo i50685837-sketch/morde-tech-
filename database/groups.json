@@ -1,0 +1,15 @@
+{
+  "120363000000000000@g.us": {
+    "name": "Morde-Tech Community",
+    "registered": true,
+    "welcome": false,
+    "goodbye": false,
+    "antiLink": false,
+    "antiStatusMention": false,
+    "created": "2026-07-31",
+    "members": 50,
+    "admins": [
+      "254712345678@s.whatsapp.net"
+    ]
+  }
+}
