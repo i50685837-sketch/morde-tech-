@@ -1,0 +1,86 @@
+body {
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial,sans-serif;
+    color:white;
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        120deg,
+        #050014,
+        #3b0764,
+        #111827,
+        #050014
+    );
+
+    background-size:400% 400%;
+    animation: neonMove 8s infinite alternate;
+}
+
+
+@keyframes neonMove {
+
+    0% {
+        background-position:0% 50%;
+    }
+
+    100% {
+        background-position:100% 50%;
+    }
+
+}
+
+
+
+.card {
+
+    width:360px;
+    padding:30px;
+    text-align:center;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:25px;
+
+    border:2px solid transparent;
+
+    background-clip:padding-box;
+
+    box-shadow:
+    0 0 20px #a855f7,
+    0 0 40px #ec4899,
+    0 0 80px #8b5cf6;
+
+    animation:
+    glow 3s infinite alternate;
+
+}
+
+
+
+@keyframes glow {
+
+    from {
+
+        box-shadow:
+        0 0 20px #a855f7,
+        0 0 40px #ec4899;
+
+    }
+
+
+    to {
+
+        box-shadow:
+        0 0 40px #22d3ee,
+        0 0 80px #a855f7;
+
+    }
+
+}
