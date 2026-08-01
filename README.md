@@ -13,7 +13,7 @@
 # 🚀 PAIRING
 
 <p align="center">
-<a href="https://your-pairing-url.com">
+<a href="https://https://morde-tech.vercel.app/">
 <img src="https://img.shields.io/badge/PAIR%20NOW-FF0000?style=for-the-badge&logo=whatsapp&logoColor=white"/>
 </a>
 </p>
